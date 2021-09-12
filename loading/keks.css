@@ -1,0 +1,307 @@
+body {
+
+  background-color: rgb(37, 37, 37);
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+	margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+ font-family: 'Roboto', sans-serif;  
+}
+
+#particle {
+  z-index: 9997;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+  border: 4px solid #fff;
+}
+
+.discord {
+  z-index: 9999;
+  position: absolute;
+}
+
+#discordText {
+  text-decoration: none;
+  position: absolute;
+  margin-top: 1010px;
+  margin-left: 70px;
+
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #f1ff29;
+
+  text-shadow: 1px 1px #2a2a2a;
+}
+
+#discordskog {
+  color: #f1ff29;
+}
+
+iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+p {
+
+    font-size: 63px;
+}
+
+
+@font-face {
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.cmdBOX {
+    position: relative;
+    background: linear-gradient(0deg, #000, #262626);
+    width: 100%;
+    height: 150%;
+	z-index: 2000000; position:fixed;
+}
+
+.rulesBox {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	transform: rotate(-0deg);
+	right: -130px;
+	bottom: -2px;
+    font-family: 'Archivo', sans-serif;
+    z-index: 1001; position:fixed;
+    margin: 200px auto 0;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    pointer-events: none;
+    margin-left: -40px;
+    margin-top: -40px;
+	height: 100px;
+	width: 100px;
+}
+
+.fix{position: absolute; left: 75.4%;right: 0.3%;bottom: 33%;z-index: 99999;color: #262626;font-family: "Segoe UI";}
+
+/* Text rules config */ 
+.text {
+    display:none;  
+    font-family: 'Archivo', sans-serif;
+    background-color: #262626;
+	outline: 2px solid #fff;
+	color: white;
+}
+
+.fix p 
+{font-size: 15px;  /* Size text of the rules */ 
+margin-left: 3px;margin-top: 0px;}
+
+.fix h2, .fix h3 { font-family:  BankGothic;font-size:  10px;margin: 0px;color: #262626;}
+
+.loadbar
+{
+    width: 100%;
+    background-color: #6A6964;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+	outline: 2px solid #fff;
+}
+
+.scroll
+{
+    width: 10%;
+    background-color: #262626;
+    height: 20px;
+    position: absolute;
+    left: 0%;
+}
+
+.logo {
+    width: 320px;
+    width: 320px;
+}
+
+#container {
+    text-shadow: 2px 2px 5px #424242;
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 75px;
+    text-align: center;
+}
+
+.rulesBox:before,
+.rulesBox:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(214.5% + 5px);
+    z-index: 1000; position:fixed;
+    animation: rulesBox 20s linear infinite;
+}
+
+
+
+@keyframes rulesBox {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.discordTextBack {
+
+  padding: 16px;
+  padding-right: 40px;
+  background-color: #4b4a4a4d;
+
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.discordIcon {
+
+  margin-top: 1010px;
+  margin-left: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.discordPictureReal {
+  position: absolute;
+  z-index: 9999;
+  margin-top: -53px;
+  margin-left: 30px;
+  width: 30px;
+  height: 25px;
+}
+
+#logo {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #f1ff29;
+    font-weight: 400;
+    z-index: 9999;
+    position: absolute;
+
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+
+#logo2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #f1ff29;
+    font-weight: 400;
+    z-index: 9999;
+    position: absolute;
+
+    margin-top:100px;
+    margin-left: 40px;
+
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #f1ff29;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  z-index: 9997;
+}
+
+
+
+
+.website {
+  z-index: 9999;
+  position: absolute;
+}
+
+#websiteText {
+  text-decoration: none;
+  position: absolute;
+  margin-top: 940px;
+  margin-left: 70px;
+
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #f1ff29;
+
+  text-shadow: 1px 1px #2a2a2a;
+}
+
+#websiteskog {
+  color: #f1ff29;
+}
+
+.websiteTextBack {
+  padding: 16px;
+  padding-right: 40px;
+  background-color: #f1ff29;
+
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+.websiteIcon {
+
+  margin-top: 940px;
+  margin-left: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.websitePictureReal {
+  position: absolute;
+  z-index: 9999;
+  margin-top: -56px;
+  margin-left: 31px;
+  width: 30px;
+  height: 30px;
+}
+
+#bold {
+  color: #f1ff29;
+}

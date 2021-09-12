@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<title>MRP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+        <link rel="stylesheet" type="text/css" href="keks.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	    <link rel="stylesheet" type="text/css" href="http://cdn.plyr.io/3.3.21/plyr.css">
+		<style>#selector {width:100%; height:100%;}</style>
+        <img src='bg.gif' id='selector'/>
+    </head>
+
+    <body>
+        <div id="particle"></div>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="gg.js"></script>
+	    <script src="./Assets/JS/config.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		
+	
+		
+   <audio id="Loading" autoplay loop >
+         <source src="music/Loading.mp3" type="audio/mp3">
+    </audio>
+	<script>
+     var vid = document.getElementById("Loading");
+     vid.volume = 0.5
+    </script>
+	
+ 		
+<script type="text/javascript">
+var count = 0;
+var thisCount = 0;
+const handlers = {
+    startInitFunctionOrder(data)
+    {
+        count = data.count;
+
+    },
+
+    initFunctionInvoking(data)
+    {
+        document.querySelector('.scroll').style.left = '0%';
+        document.querySelector('.scroll').style.width = ((data.idx / count) * 100) + '%';
+    },
+
+    startDataFileEntries(data)
+    {
+        count = data.count;
+
+        document.querySelector('.loadbar h3').innerHTML += "\u{1f358}";
+    },
+
+    performMapLoadFunction(data)
+    {
+        ++thisCount;
+
+        document.querySelector('.scroll').style.left = '0%';
+        document.querySelector('.scroll').style.width = ((thisCount / count) * 100) + '%';
+    },
+
+    onLogLine(data)
+    {
+        document.querySelector('.loadbar p').innerHTML = data.message + "..!";
+    }
+};
+
+window.addEventListener('message', function(e)
+{
+    (handlers[e.data.eventName] || function() {})(e.data);
+});
+</script>
+
+<script>
+(function() {
+    var text = $(".text");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        text.eq(quoteIndex % text.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();
+(function() {
+    var text = $(".text2");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        text.eq(quoteIndex % text.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+
+    showNextQuote();
+
+})
+</script>
+    </body>
+</html>
+
+
+
+	
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/plyr/3.3.21/plyr.min.js"></script>
+	<script type="text/javascript" src="Index.js"></script>
+	<script src="config.js"></script>
+	<script src="pause.js"></script>
+
+		
+		    <div id="wrapper"></div>
+
+
+        
+        <script type="text/javascript">
+		
+function play()
+{
+var a = Math.random()*5;
+a=Math.floor(a);
+
+if(a==4)
+{
+document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='music/music5.ogg' type='audio/ogg'></audio>";
+}
+if(a==3)
+{
+document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='music/music4.ogg' type='audio/ogg'></audio>";
+}
+if(a==2)
+{
+document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='music/music3.ogg' type='audio/ogg'></audio>";
+}
+
+if(a==1)
+{
+document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='music/music2.ogg' type='audio/ogg'></audio>";
+}
+if(a==0)
+{
+document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='music/music1.ogg' type='audio/ogg'></audio>";
+}
+}
+</script>
+
+	<script type="text/javascript">
+		function ffalse() {
+			return false;
+		}
+
+		function ftrue() {
+			return true;
+		}
+
+		document.onselectstart = new Function("return false");
+		if (window.sidebar) {
+			document.onmousedown = ffalse;
+			document.onclick = ftrue;
+		}
+	</script>
+	
+		<script type="text/javascript">
+		$(document).mousemove(function (e) {
+			$("#cursor").css({
+				left: e.pageX,
+				top: e.pageY
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		document.getElementById("txtRouge").innerHTML = red_text
+		document.getElementById("logoSRV").setAttribute("src", "Assets/IMG/" + img)
+		document.getElementById("YTvdo").setAttribute("src", "https://www.youtube.com/embed/" + video_ID + "?autoplay=1&loop=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0")
+	</script>
+
+    </head>
+</html>
