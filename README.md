@@ -1,4 +1,6 @@
-# Fivem-GIF-Loading-Screen
+# Fivem-Loading-Screen
+
+This script adds a video file as your loading screen with music. (GIF, MP4, Etc)
 
 To add your loading screen -- Re-name your GIF file "bg.gif" and drag it into the "loading" file
 
