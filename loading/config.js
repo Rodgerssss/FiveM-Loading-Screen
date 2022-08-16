@@ -1,6 +1,6 @@
 //-----------------Config-----------------
-var title = "Menace RP";
-var link = "Founded by Pinkable";
+var title = "[NAME]";
+var link = "Founded by Rodgers";
 //---------------End Config---------------
 
 
